@@ -40,7 +40,7 @@ class CDInjector {
 
         this.emptySet = new Set();
 
-        this.serverAddress = `https://rawgit.com/seraphimalia/cm-eform-scripts/master/`;
+        this.serverAddress = `https://cdn.jsdelivr.net/gh/seraphimalia/cm-eform-scripts@master/`;
         /** @type {Boolean} */
         this.isServerReachable = true;
 
