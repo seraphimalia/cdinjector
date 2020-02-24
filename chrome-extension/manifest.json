@@ -2,7 +2,7 @@
   "name": "ComDispatch: JS/CSS injector",
   "short_name": "CDInjector",
   "manifest_version": 2,
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "CDInjector loads custom Javascript and CSS directly from the cm github repo.",
   "icons": {
     "16": "cd-16.png",
