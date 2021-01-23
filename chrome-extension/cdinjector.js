@@ -40,7 +40,8 @@ class CDInjector {
 
         this.emptySet = new Set();
 
-        this.serverAddress = `https://cdn.jsdelivr.net/gh/seraphimalia/cm-eform-scripts@master/`;
+        //this.serverAddress = `https://cdn.jsdelivr.net/gh/seraphimalia/cm-eform-scripts@master/`;
+        this.serverAddress = `https://deploy-preview-1--cm-eform-scripts.netlify.app/`;
         /** @type {Boolean} */
         this.isServerReachable = true;
 
