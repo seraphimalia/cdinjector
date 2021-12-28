@@ -2,8 +2,8 @@
   "name": "ComDispatch: JS/CSS injector",
   "short_name": "CDInjector",
   "manifest_version": 2,
-  "version": "1.1.1",
-  "description": "CDInjector loads custom Javascript and CSS directly from the cm github repo.",
+  "version": "1.2.0",
+  "description": "CDInjector makes changes to the Community Medics dispatch tool to allow dispatchers to manage incidents properly.",
   "icons": {
     "16": "cd-16.png",
     "24": "cd-24.png",
@@ -22,14 +22,23 @@
     "default_title": "CDInjector",
     "default_popup": "popup.html"
   },
-  "content_scripts": [{
-    "all_frames": true,
-    "run_at":     "document_start",
-    "matches":    ["http://*/*", "https://*/*"],
-    "js":         ["content-script.js"]
-  }],
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "run_at": "document_start",
+      "matches": [
+        "https://cm.rpdy.io/*"
+      ],
+      "js": [
+        "content-script.js"
+      ]
+    }
+  ],
   "background": {
-    "scripts": ["cdinjector.js", "background.js"],
+    "scripts": [
+      "cdinjector.js",
+      "background.js"
+    ],
     "persistent": true
   },
   "permissions": [
